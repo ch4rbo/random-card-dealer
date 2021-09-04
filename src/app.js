@@ -26,7 +26,9 @@ window.onload = function() {
   ];
   let palos = ["♦", "♥", "♠", "♣"];
 
-  Math.floor(Math.random() * 13);
-  console.log(Math.floor(Math.random() * 13));
-  numeros.length;
+  let numeroAleatorio = Math.floor(Math.random() * 13);
+  let valorAleatorio = numeros[numeroAleatorio];
+  let numeroAleatorioPalo = Math.floor(Math.random() * 4);
+  let paloAleatorio = palos[numeroAleatorioPalo];
+  console.log(valorAleatorio, paloAleatorio);
 };
