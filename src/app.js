@@ -32,3 +32,10 @@ window.onload = function() {
   let paloAleatorio = palos[numeroAleatorioPalo];
   console.log(valorAleatorio, paloAleatorio);
 };
+
+delete lo de abajo para que compilar correctamente
+document.querySelector(".top");
+document.querySelector(".bottom);
+document.querySelector(".center");
+
+
