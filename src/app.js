@@ -7,8 +7,9 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("");
+  /*console.log(""); */
 
+  let palos = ["♦", "♥", "♠", "♣"];
   let numeros = [
     "1",
     "2",
@@ -24,18 +25,29 @@ window.onload = function() {
     "Q",
     "K"
   ];
-  let palos = ["♦", "♥", "♠", "♣"];
+
+  function getRandom(number) {
+    return Math.floor(Math.random() * number);
+  }
 
   let numeroAleatorio = Math.floor(Math.random() * 13);
   let valorAleatorio = numeros[numeroAleatorio];
   let numeroAleatorioPalo = Math.floor(Math.random() * 4);
+  console.log(valorAleatorio, paloAleatorio, numeroAleatorioPalo);
   let paloAleatorio = palos[numeroAleatorioPalo];
   console.log(valorAleatorio, paloAleatorio);
+
+  let palo1 = document.querySelector(".top");
+  let palo2 = document.querySelector(".bottom");
+  let randomnum = document.querySelector(".center");
+
+  if (palos[""] === "♥") {
+    palo1.setAtrribute("heart");
+    heart.innerHTML = paloAleatorio;
+    numero.innerHTML = valorAleatorio;
+  } else {
+    palo1.innerHTML = paloAleatorio;
+    randomnum.innerHTML = valorAleatorio;
+    palo2.innerHTML = paloAleatorio;
+  }
 };
-
-delete lo de abajo para que compilar correctamente
-document.querySelector(".top");
-document.querySelector(".bottom);
-document.querySelector(".center");
-
-
