@@ -50,4 +50,12 @@ window.onload = function() {
     randomnum.innerHTML = valorAleatorio;
     palo2.innerHTML = paloAleatorio;
   }
+  let color;
+
+  if (paloAleatorio == "♦" || paloAleatorio == "♥") {
+    color = "red";
+    palo1.style.color = "red";
+    palo2.style.color = "red";
+    randomnum.style.color = "red";
+  }
 };
