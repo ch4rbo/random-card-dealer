@@ -58,4 +58,5 @@ window.onload = function() {
     palo2.style.color = "red";
     randomnum.style.color = "red";
   }
+  
 };
